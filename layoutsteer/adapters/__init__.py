@@ -9,9 +9,6 @@
       （Tier A: ALL_ATTENTION_FUNCTIONS 替换 / Tier B: 类 forward 补丁 /
        Tier C: eager score 列加 δ）
   - generate(inputs, max_new_tokens): 贪心生成并解码
-
-定位（布局检索）不在此层: 干预框一律复用 Qwen2.5-VL 的定位产物
-（原图像素坐标, 模型无关）。
 """
 from .base import ModelAdapter
 

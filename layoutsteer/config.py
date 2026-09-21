@@ -30,7 +30,7 @@ class ModelConfig:
     localize_max_pixels: int = 256 * 28 * 28
 
 
-# 论文所用模型的注册表（定位一律复用 Qwen2.5-VL 的布局产物, 与模型无关）
+# 论文所用模型的注册表
 MODEL_PRESETS = {
     # ── 通用 VLM（OCR-free）──
     "qwen25vl": dict(model_path=os.path.join(
