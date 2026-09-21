@@ -27,6 +27,8 @@ Given a document image and a query, LayoutSteer
 The result: off-the-shelf VLMs of different architectures and scales improve on
 four VIE benchmarks, with the frozen model and no extra network.
 
+![LayoutSteer framework](assets/framework_figure.png)
+
 ## Repository Structure
 
 ```
@@ -39,6 +41,7 @@ LayoutSteer/
 │   └── evaluation/         # Metrics (LayTextLLM-compatible)
 ├── scripts/                # Entry points: localize, run_infer, run_coldstart, sweeps
 ├── dataset/                # Benchmarks in the unified convention (download separately)
+├── assets/                 # Figures
 ├── requirements.txt
 ├── LICENSE
 └── README.md
