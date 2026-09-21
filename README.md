@@ -27,6 +27,23 @@ Given a document image and a query, LayoutSteer
 The result: off-the-shelf VLMs of different architectures and scales improve on
 four VIE benchmarks, with the frozen model and no extra network.
 
+## Repository Structure
+
+```
+LayoutSteer/
+├── layoutsteer/            # Core package
+│   ├── intervention/       # Key-modulation hooks: probe, ΔK, bbox→token grid
+│   ├── localization/       # Layout embedding, retrieval, voting, clustering
+│   ├── adapters/           # Per-backbone load / inputs / hook tier (7 models)
+│   ├── datasets/           # Unified KIE dataset interface
+│   └── evaluation/         # Metrics (LayTextLLM-compatible)
+├── scripts/                # Entry points: localize, run_infer, run_coldstart, sweeps
+├── dataset/                # Benchmarks in the unified convention (download separately)
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
+
 ## Installation
 
 ```bash
@@ -212,23 +229,6 @@ receive zero leakage. Run it before adapting a new backbone:
 ```bash
 python scripts/verify_delta_injection.py --model qwen3vl --dataset sroie \
     --delta 5.0 --layer 22 --n-tasks 5
-```
-
-## Repository Layout
-
-```
-layoutsteer/
-├── config.py              all paths / hyper-parameters; MODEL_PRESETS
-├── intervention/          ScoreDeltaProbe + ΔK hooks + bbox→token grid mapping
-├── localization/          layout embedding, global retrieval, local voting/clustering
-├── adapters/              per-model load / input / token mapping / hook tier
-├── datasets/              unified KIE dataset interface (sroie / standard)
-├── evaluation/            metrics (LayTextLLM-compatible)
-├── model_loader.py        Qwen2.5-VL loading + input construction
-├── runner.py              dual-inference main loop (normal vs. steered)
-└── visualization.py       attention heat-map overlays
-scripts/                   pipeline entry points (see Quickstart)
-dataset/                   datasets, in the convention above
 ```
 
 ## Main Results
