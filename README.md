@@ -77,9 +77,6 @@ directory names below (registered in `layoutsteer/config.py`, `MODEL_PRESETS`):
 | `docowl2` | `DocOwl2` | specialized OCR-free |
 | `doclayllm` | `DocLayLLM_sft` | OCR-based |
 
-Layout localization is backbone-agnostic: it always reuses the layout products of
-Qwen2.5-VL, whose boxes are in original-image pixel coordinates.
-
 ## Dataset Preparation
 
 We evaluate on four standard VIE benchmarks — **SROIE**, **CORD**, **FUNSD** and
