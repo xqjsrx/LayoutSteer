@@ -1,6 +1,4 @@
-# LayoutSteer
-
-**Self-Bootstrapping Layout Steering for Document Visual Information Extraction**
+# LayoutSteer: Self-Bootstrapping Layout Steering for Document Visual Information Extraction
 
 LayoutSteer is a plug-and-play, **training-free** framework that steers a frozen
 vision-language model (VLM) with a **layout prior** at inference time. It needs
