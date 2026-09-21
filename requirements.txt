@@ -1,0 +1,13 @@
+# LayoutSteer is training-free and adds no extra network, so the runtime
+# dependency set is small. Versions below are the ones used in the paper.
+
+torch>=2.4.0
+torchvision                 # InternVL3 adapter image transform
+transformers>=4.48.0        # layout embedding extraction + all model adapters
+accelerate                  # device placement / low-cpu-mem loading
+flash-attn>=2.6.0           # Tier A intervention hooks FA2 dispatch
+Pillow                      # image IO
+numpy
+opencv-python               # geometric (morphological) text-line boxes
+scikit-learn                # agglomerative clustering of voted boxes
+tqdm
