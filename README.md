@@ -70,7 +70,7 @@ directory names below (registered in `layoutsteer/config.py`, `MODEL_PRESETS`):
 | Registry name | Directory | Role in the paper |
 |---|---|---|
 | `qwen3vl` | `Qwen3-VL-8B-Instruct` | primary backbone |
-| `qwen25vl` | `Qwen2.5-VL-7B-Instruct` | generic VLM (also the localizer) |
+| `qwen25vl` | `Qwen2.5-VL-7B-Instruct` | generic VLM |
 | `llavaov15` | `LLaVA-OneVision-1.5-8B-Instruct` | generic VLM |
 | `internvl35` | `InternVL3_5-8B` | generic VLM |
 | `deepseekocr` | `DeepSeek-OCR` | specialized OCR-free |
