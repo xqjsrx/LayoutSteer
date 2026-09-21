@@ -246,11 +246,6 @@ datasets each model is evaluated on; F1 (%) for the OCR-based model.
 | DocOwl2 | 52.1 | **55.3** |
 | DocLayLLM (F1) | 81.5 | **87.1** |
 
-Two observations from the ablation: the mask is only useful when it is both
-*layout-aligned* and *graded* (a random region or a uniform global boost even
-falls below the base model), and the fallback matters as much as the prior —
-documents whose layout is not yet covered are left untouched.
-
 ## Citation
 
 ```bibtex
