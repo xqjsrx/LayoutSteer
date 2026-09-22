@@ -241,7 +241,7 @@ datasets each model is evaluated on; F1 (%) for the OCR-based model.
 | Qwen2.5-VL | 70.6 | **75.0** |
 | LLaVA-OV-1.5 | 63.4 | **66.2** |
 | InternVL3 | 66.5 | **68.0** |
-| Qwen3-VL | 79.9 | **82.7** |
+| Qwen3-VL | 81.2 | **83.3** |
 | DeepSeek-OCR | 45.9 | **50.5** |
 | DocOwl2 | 52.1 | **55.3** |
 | DocLayLLM (F1) | 81.5 | **87.1** |
